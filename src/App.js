@@ -1,8 +1,14 @@
+import Router from './routes'
+import ThemeProvider from './theme'
+import Scrollbar from './components/scrollbar/Scrollbar'
+
 function App() {
   return (
-    <div>
-      hola misael
-    </div>
+    <ThemeProvider>
+      <Scrollbar>
+        <Router />
+      </Scrollbar>
+    </ThemeProvider>
   )
 }
 
